@@ -1,0 +1,161 @@
+
+/*           GLOBAL        */
+/***************************/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: darkgrey;
+}
+
+/* NAV BAR                 */
+/***************************/
+
+.navbar {
+	font-size: 1.2em;
+	background: rgba(0, 0, 0, 0.75);
+	padding-bottom: 10px;
+	height: 55px;
+}
+
+.navbar ul li {
+	padding: 0;
+	margin: 0;
+}
+
+.main-nav {
+	list-style-type: none;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav li {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: .85em;
+    z-index: 10;
+}
+
+.main-nav a {
+	display: block;
+	border-top: solid 1px #696969;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: darkgrey;
+}
+
+
+.logo img {
+	display: inline-block;
+	margin-left:5px;
+	height: 100%;
+	margin-top: 5px;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+/* VIDEO                   */
+/***************************/
+
+#cover-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  transform: translateX(calc((100% - 100vw) / 2));
+}
+
+.buy-tickets-button {
+  width: 180px;
+  font-size: 1em;
+  padding: 10px;
+  border: solid 1px white;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.buy-tickets-button:hover {
+  background: lightgrey;
+  color: black;
+}
+
+.buy-button {
+	text-align: center;
+	margin-top: 400px;
+}
+
+/* MEDIUM BREAKPOINT       */
+/***************************/
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 82px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex !important;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+		.main-nav a {
+			display: block;
+			border: none;
+			padding: 20px;
+		}
+
+   .navbar-toggle {
+       display: none;
+    }
+
+   .logo img {
+			display: inline-block;
+			margin-left:5px;
+			height: 75px;
+			margin-top: 5px;
+		}
+
+} /*END MEDIUM BREAKPOINT*/
+
