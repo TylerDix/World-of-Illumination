@@ -9,6 +9,7 @@
       <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 <body>
+
 	<nav class="navbar">
 		<span class="navbar-toggle" id="js-navbar-toggle">
 			<i class="fas fa-bars"></i>
@@ -18,10 +19,10 @@
 		</a>
 		<ul class="main-nav" id="js-menu">
 			<li>
-				<a href="#">Buy Tickets</a>
+				<a href="#">Locations</a>
 			</li>
 			<li>
-				<a href="#">Learn More</a>
+				<a href="#">Pricing</a>
 			</li>			
 			<li>
 				<a href="#">Plan Your Trip</a>
@@ -29,16 +30,52 @@
 		</ul>
 	</nav> <!-- End nav bar -->
 
-	<!-- Video -->
-	<div class="video-container">
-		<video autoplay muted loop id="cover-video">
-	  	<source src="assets/promoVid.mp4" type="video/mp4">
-		</video>
-		<div class="buy-button">
-		<button class="buy-tickets-button">Buy Tickets</button>
-		</div>
-	</div>
+		<!-- Video -->
+	<div class="landing-wrapper">
+		<div class="video-container">
+			<video autoplay muted loop id="cover-video">
+		  	<source src="assets/promoVid.mp4" type="video/mp4">
+			</video>
+			<div class="video-overlay">
+				<p>The world's largest drive-thru holiday light spectacular.</p>
+				<div class="buy-button">
+					<button class="buy-tickets-button">Buy Tickets</button>
+				</div>
+			</div>
+		</div> <!-- /video-container-->
 
+		
+		<div class="location-container">
+			<h1>Two locations. Two different experiences.</h1>
+			<div class="location-flex-container">
+				<div class="location-flex-item">
+					<h2>North Phoenix</h2>
+					<p>27701 N Black Canyon Hwy</p>
+					<p>Phoenix, AZ 85085</p>
+					<button class="button-directions">Directions</button>
+				</div>
+				<div class="location-flex-item">
+					<h2>Tempe</h2>
+					<p>2200 W Alameda Dr</p>
+					<p>Phoenix, AZ 85085</p>
+					<button class="button-directions">Directions</button>
+				</div>
+			</div>
+		</div>
+<!-- 		<div class="price-container">
+			<h1>Price per vehicle. Not per person.</h1>
+			<div class="price-flex-container">
+				<div class="price-flex-item">
+					[content]
+				</div>
+				<div class="price-flex-item">
+					[content]
+				</div>
+			</div>
+		</div> -->
+	</div> <!-- /landing wrapper -->
+
+	
 <!-- jQuery from CDN -->
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"

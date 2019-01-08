@@ -9,7 +9,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: darkgrey;
+	background: black;
 }
 
 /* NAV BAR                 */
@@ -83,6 +83,10 @@ body {
 /* VIDEO                   */
 /***************************/
 
+/*.landing-wrapper {
+	height: 100vh;
+}*/
+
 #cover-video {
   position: fixed;
   right: 0;
@@ -95,6 +99,8 @@ body {
 
 .buy-tickets-button {
   width: 180px;
+  margin-top: 20px;
+  margin-bottom:20px;
   font-size: 1em;
   padding: 10px;
   border: solid 1px white;
@@ -112,8 +118,88 @@ body {
 
 .buy-button {
 	text-align: center;
-	margin-top: 400px;
 }
+
+.video-overlay {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+}
+
+.video-overlay p {
+	font-size: 1.5em;
+}
+
+.location-container {
+	position: relative;
+	background-color: black;
+	margin-top: 100vh;
+	padding-top: 40px;
+	padding-bottom: 62px;
+}
+
+.location-container h1 {
+	color: white;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.location-flex-container {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.location-flex-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: lightgrey;
+	font-size: 1em;
+	line-height: 35px;
+	width: 300px;
+	height: 210px;
+	border: 1px solid lightgrey;
+	margin: auto;
+}
+
+.location-flex-item:first-child {
+	margin-bottom: 40px;
+}
+
+.button-directions {
+	display: flex;
+	justify-content: center;
+  width: 180px;
+  font-size: 1em;
+  padding: 10px;
+  border: solid 1px white;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.button-directions:hover {
+  background: lightgrey;
+  color: black;
+}
+
+.price-container {
+	background: #404040;
+	position: relative;
+	margin-top: -25px;
+}
+
+
 
 /* MEDIUM BREAKPOINT       */
 /***************************/
@@ -156,6 +242,44 @@ body {
 			height: 75px;
 			margin-top: 5px;
 		}
+	.video-overlay {
+		font-size: 1.2em;
+	}
+
+
+	.locations-container h1 {
+	font-size: 1.4em;
+	}
+
+	.location-flex-container {
+	flex-direction: row;
+	margin: auto;
+	width: 90%;
+	}
+
+	.location-flex-item:first-child {
+	margin-bottom: 0px;
+	}
 
 } /*END MEDIUM BREAKPOINT*/
+
+/* LARGE BREAKPOINT        */
+/***************************/
+
+@media screen and (min-width: 1224px) {
+
+	.location-flex-container {
+		width: 75%;
+	}
+
+} /*END LARGE BREAKPOINT*/
+
+/* CLEARFIX       */
+/***************************/
+
+/*.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
 
