@@ -1,4 +1,3 @@
-
 /*           GLOBAL        */
 /***************************/
 * {
@@ -17,7 +16,7 @@ body {
 
 .navbar {
 	font-size: 1.2em;
-	background: rgba(0, 0, 0, 0.75);
+	background: black;
 	padding-bottom: 10px;
 	height: 55px;
 }
@@ -144,8 +143,9 @@ body {
 
 .location-container h1 {
 	color: white;
+	margin: auto;
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	width: 95%;
 }
 
@@ -206,11 +206,13 @@ body {
 }
 
 .price-container {
-	background: #303030;
+	background-image: url("../assets/christmas-dark.png");
+	background-repeat: repeat;
+	z-index: 2;
 	position: relative;
 	margin-top: -25px;
 	padding-top: 40px;
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 }
 
 .price-flex-container {
@@ -223,7 +225,7 @@ body {
 	text-align: center;
 	margin: auto;
 	margin-bottom: 55px;
-	margin-top: 55px;
+	margin-top: 25px;
 	width: 95%;
 }
 .price-flex-item {
@@ -242,6 +244,7 @@ body {
 .online-car-text,
 .driveup-car-text {
 	font-size: 1.8em;
+	margin: auto;
 	text-align: center;
 }
 
@@ -287,6 +290,71 @@ body {
 	width: 95%;
 }
 
+.banner-children img {
+	width: 140px;
+}
+
+.holidayblvd-container {
+	background: black;
+	position: relative;
+	margin-top: -25px;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.holidayblvd-container h1 {
+	color: white;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 35px;
+	text-align: center;
+}
+
+.holiday-subtitle h3, 
+.holiday-subtitle h4 {
+	color: darkgrey;
+	font-size: 1.2em;
+	margin: auto;
+	text-align: center;
+	line-height: 1.7em;
+	width: 95%;
+}
+
+.holiday-subtitle h4 {
+	font-size: 0.8em;
+}
+
+.to-do-list {
+	display: flex;
+	color: darkgrey;
+	margin: auto;
+	justify-content: center;
+	line-height: 30px;
+}
+
+.large-pic img {
+	width: 100%;
+}
+
+figcaption {
+	color: darkgrey;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.buy-tickets-button {
+  width: 180px;
+  margin-top: 20px;
+  margin-bottom:20px;
+  font-size: 1em;
+  padding: 10px;
+  border: solid 1px white;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 1;
+}
 
 
 /* MEDIUM BREAKPOINT       */
@@ -382,4 +450,3 @@ body {
   clear: both;
   display: table;
 }*/
-

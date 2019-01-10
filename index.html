@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>World of Illumination</title>
     	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -24,6 +25,9 @@
 			<li>
 				<a href="#">Pricing</a>
 			</li>			
+			<li>
+				<a href="#">Holiday Blvd</a>
+			</li>
 			<li>
 				<a href="#">Plan Your Trip</a>
 			</li>
@@ -67,18 +71,19 @@
 					<button class="button-directions">Directions</button>
 				</div>
 			</div>
-		</div>
+		</div> <!-- /location container -->
 
+		<!-- price container -->
 		<div class="price-container">
 			<h1>Price per vehicle. Not per person.</h1>
 			<div class="price-flex-container">
 				<div class="price-flex-item">
-					<span class="online-car-text">Online</span>
+					<span class="online-car-text"><strong>Online</strong></span>
 					<span class="fas fa-car-side"></span>
 					<span class="online-car-price">$29</span> <!-- $35 for drive up -->
 				</div>
 				<div class="price-flex-item">
-					<span class="driveup-car-text">Drive Up</span>
+					<span class="driveup-car-text"><strong>Drive Up</strong></span>
 					<span class="fas fa-car-side car-invert"></span>
 					<span class="driveup-car-price">$35</span> <!-- 65 for drive up -->
 				</div>
@@ -95,13 +100,47 @@
 			</div>
 			<div class="price-info">
 				<p>Time slots are sold in 30-minute increments. Please arrive any time within your designated time slot.</p><br>
-				<p>Party bus max height is 13' and max width is 28'.</p><br>
-				<p>Sales are final and non-refundable.</p>
+				<p>Party bus max-height is 13' and max-length is 28'.</p><br>
+				<p>Sales are final and non-refundable.</p><br>
+				<p>A portion of each ticket sale will be donated to:</p><br>
+				<div class="banner-children">
+				<img src="assets/banner_childrens_logo.png" alt="Banner For Children's Logo">
+				</div>
 			</div>
 			<div class="buy-button">
 				<button class="buy-tickets-button">Buy Tickets</button>
 			</div>
-		</div>
+		</div> <!-- /Price Container -->
+
+		<!-- holiday blvd container -->
+		<div class="holidayblvd-container">
+			<h1>You've seen the lightshow. Now what?</h1>
+			<div class="showtime holiday-subtitle">
+				<h3>Park your car. Hop out. Enjoy the Holiday Boulevard Marketplace (no charge for parking or entrance).</h3>
+				<h4>North Phoenix location only.</h4>
+			</div>
+			<div class="to-do-list">
+				<ul>
+					<li>Santa's Arctic Adventure (obstacle course)</li> 
+					<li>Pics with Santa</li>
+					<li>Food and drink</li>
+					<li>Restrooms</li>
+					<li>Arts & crafts</li>
+					<li>And much more!</li>
+				</ul>
+			</div>
+			<figure class="large-pic">
+				<img src="assets/obs_course.jpeg" alt="Obstacle Course Pic">
+				<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
+			</figure><br>
+			<figure class="large-pic">
+				<a href="holiday-blvd-map.html"><img src="assets/map.jpg" alt="Holiday Blvd Map"></a>
+				<figcaption>Holiday Boulevard Marketplace</figcaption>
+			</figure>
+			<div class="buy-button">
+				<button class="buy-tickets-button">View Full Map</button>
+			</div>
+		</div> <!-- holiday blvd container -->
 	</div> <!-- /landing wrapper -->
 
 	
@@ -112,5 +151,11 @@
   crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
+
+<!-- URLs
+	Facebook: https://www.facebook.com/WorldofIllumination
+	YouTube: https://www.youtube.com/channel/UCqyrmCXoOVq_4vB3b0OJnNQ/videos?view_as=subscriber
+	Instagram: https://www.instagram.com/illuminationaz/
+-->
 
 </html>
