@@ -7,8 +7,39 @@
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	background: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+		color: darkgrey;
+		line-height: 30px;
+}
+
+h1 {
+	font-family:'Cinzel', serif;
+	color: white;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 17px;
+	width: 95%;
+}
+
+h2 {
+	color: darkgrey;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.subtitle {
+	margin-bottom: 0;
+}
+
+.upperfont {
+	font-family:'Cinzel', serif;
 }
 
 /* NAV BAR                 */
@@ -23,7 +54,7 @@ body {
 
 .navbar ul li {
 	padding: 0;
-	margin: 0;
+	margin: auto;
 }
 
 .main-nav {
@@ -34,6 +65,7 @@ body {
 }
 
 .main-nav li {
+		font-family:'Cinzel', serif;
     text-align: center;
     margin-bottom: 15px;
     font-size: .85em;
@@ -45,12 +77,12 @@ body {
 	border-top: solid 1px #696969;
 	padding-top: 18px;
 	padding-bottom: 18px;
-	color: white;
+	color: darkgrey;
 	text-decoration: none;
 }
 
 .main-nav a:hover {
-	color: darkgrey;
+	color: white;
 }
 
 
@@ -81,10 +113,6 @@ body {
 
 /* VIDEO                   */
 /***************************/
-
-/*.landing-wrapper {
-	height: 100vh;
-}*/
 
 #cover-video {
   position: fixed;
@@ -130,7 +158,9 @@ body {
 }
 
 .video-overlay p {
+	font-family:'Cinzel', serif;
 	font-size: 1.5em;
+	color: white;
 }
 
 .location-container {
@@ -141,22 +171,7 @@ body {
 	padding-bottom: 100px;
 }
 
-.location-container h1 {
-	color: white;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 20px;
-	width: 95%;
-}
-
-.location-container h3 {
-	color: darkgrey;
-	font-size: 1.2em;
-	text-align: center;
-	line-height: 1.7em;
-}
-
-.showtime {
+.subtitle h3:last-child {
 	margin-bottom: 35px;
 }
 
@@ -175,7 +190,7 @@ body {
 	padding-bottom: 15px;
 	color: lightgrey;
 	font-size: 1em;
-	line-height: 35px;
+	line-height: 30px;
 	width: 300px;
 	height: 250px;
 	border: 1px solid lightgrey;
@@ -205,29 +220,31 @@ body {
   color: black;
 }
 
-.price-container {
-	background-image: url("../assets/christmas-dark.png");
-	background-repeat: repeat;
-	z-index: 2;
+.price-container,
+.review-container,
+.social-container {
+	background: #181818;
 	position: relative;
 	margin-top: -25px;
 	padding-top: 40px;
-	padding-bottom: 70px;
+	padding-bottom: 65px;
 }
+
+.holidayblvd-container,
+.prepare-container {
+	background: black;
+	position: relative;
+	margin-top: -25px;
+	padding-top: 40px;
+	padding-bottom: 65px;
+}
+
 
 .price-flex-container {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.price-container h1 {
-	color: white;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 55px;
-	margin-top: 25px;
-	width: 95%;
-}
 .price-flex-item {
 	margin-bottom: 35px;
 }
@@ -294,24 +311,9 @@ body {
 	width: 140px;
 }
 
-.holidayblvd-container {
-	background: black;
-	position: relative;
-	margin-top: -25px;
-	padding-top: 40px;
-	padding-bottom: 50px;
-}
-
-.holidayblvd-container h1 {
-	color: white;
-	margin: auto;
-	margin-bottom: 20px;
-	margin-top: 35px;
-	text-align: center;
-}
-
 .holiday-subtitle h3, 
-.holiday-subtitle h4 {
+.holiday-subtitle h4,
+.social-container h3 {
 	color: darkgrey;
 	font-size: 1.2em;
 	margin: auto;
@@ -356,6 +358,101 @@ figcaption {
   z-index: 1;
 }
 
+.check-list {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	width: 95%;
+}
+
+.fa-check-square {
+	margin-right: 10px;
+}
+
+.check-list li,
+.fa-check-square {
+	font-size: 1.2em;
+	color: rgb(43, 253, 151);
+	list-style-type: none;
+}
+
+.check-list p {
+	margin-left: 31px;
+}
+
+.review-container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.review-item {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.fa-quote-left {
+	margin-right: 10px;
+}
+
+cite {
+
+}
+
+cite a {
+	color: rgb(14, 188, 202);
+	text-decoration: none;
+	margin-left: 31px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+cite a:hover {
+	color: white;
+}
+
+.contact-info a {
+	color: rgb(14, 188, 202);
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 8px 20px 8px;
+}
+
+.social-icons {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	font-size: 2.5em;
+
+}
+
+.social-icons a {
+	margin-right: 28px;
+	color: rgb(14, 188, 202);
+	text-decoration: none;
+}
+
+
+
+.social-icons a:hover,
+.contact-info a:hover {
+	color: white;
+	transition: all 0.3s ease-out;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: center;
+}
+
+.copyright {
+	text-align: center;
+	font-size: .75em;
+	margin-top: 20px;
+	width: 95%;
+}
+
 
 /* MEDIUM BREAKPOINT       */
 /***************************/
@@ -398,36 +495,59 @@ figcaption {
 			height: 75px;
 			margin-top: 5px;
 		}
-	.video-overlay {
-		font-size: 1.2em;
-	}
+		.video-overlay {
+			font-size: 1.2em;
+		}
 
 
-	.locations-container h1 {
-	font-size: 1.4em;
-	}
+		.locations-container h1 {
+		font-size: 1.4em;
+		}
 
-	.location-flex-container {
-	flex-direction: row;
-	margin: auto;
-	width: 90%;
-	}
+		.location-flex-container {
+		flex-direction: row;
+		margin: auto;
+		width: 85%;
+		}
 
-	.location-flex-item:first-child {
-	margin-bottom: 0px;
-	}
+		.location-flex-item:first-child {
+		margin-bottom: 0px;
+		}
 
-	.fa-car-side,
-	.fa-shuttle-van {
-		font-size: 100px;
-	}
+		.fa-car-side,
+		.fa-shuttle-van {
+			font-size: 100px;
+		}
 
-/*	.online-car-text,
-	.driveup-car-text,
-	.online-car-price,
-	.driveup-car-price {
-		font-size: 1.5em;
-	}*/
+		.check-list {
+			width: 85%;
+		}
+
+		.row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 90%;
+			margin: auto;
+		}
+
+		.review-item {
+			align-items: flex-start;
+			border-left: 1px solid darkgrey;
+			padding-left: 7px;
+			margin-right: 20px;
+			height: 200px;
+		}
+
+		.review-item:last-child {
+			margin-right: 0;
+		}
+
+		cite a {
+			margin-left: 15px;
+			margin-top: 10px;
+			display: inline-block;
+		}
 
 } /*END MEDIUM BREAKPOINT*/
 

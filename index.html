@@ -4,158 +4,208 @@
     <head>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>World of Illumination</title>
-    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     	<link rel="stylesheet" type="text/css" href="css/normalize.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
-<body>
+	<body>
 
-	<nav class="navbar">
-		<span class="navbar-toggle" id="js-navbar-toggle">
-			<i class="fas fa-bars"></i>
-		</span>
-		<a href="#" class="logo"><img src="assets/logo.png" alt="logo">
-			<!-- <img src="assets/logo.png"> -->
-		</a>
-		<ul class="main-nav" id="js-menu">
-			<li>
-				<a href="#">Locations</a>
-			</li>
-			<li>
-				<a href="#">Pricing</a>
-			</li>			
-			<li>
-				<a href="#">Holiday Blvd</a>
-			</li>
-			<li>
-				<a href="#">Plan Your Trip</a>
-			</li>
-		</ul>
-	</nav> <!-- End nav bar -->
+		<!-- navigation bar -->
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<i class="fas fa-bars"></i>
+			</span>
+			<a href="#" class="logo"><img src="assets/logo.png" alt="logo">
+				<!-- <img src="assets/logo.png"> -->
+			</a>
+			<ul class="main-nav" id="js-menu">
+				<li>
+					<a href="#">Locations</a>
+				</li>
+				<li>
+					<a href="#">Pricing</a>
+				</li>			
+				<li>
+					<a href="#">Holiday Blvd</a>
+				</li>
+				<li>
+					<a href="#">Plan Your Trip</a>
+				</li>
+			</ul>
+		</nav> <!-- /navigation bar -->
 
-		<!-- Video -->
-	<div class="landing-wrapper">
-		<div class="video-container">
-			<video autoplay muted loop id="cover-video">
-		  	<source src="assets/promoVid.mp4" type="video/mp4">
-			</video>
-			<div class="video-overlay">
-				<p>The world's largest drive-thru holiday light spectacular.</p>
+			<!-- Video -->
+			<div class="video-container">
+				<video autoplay muted loop id="cover-video">
+			  	<source src="assets/promoVid.mp4" type="video/mp4">
+				</video>
+				<div class="video-overlay">
+					<p>The world's largest drive-thru holiday light spectacular.</p>
+					<div class="buy-button">
+						<button class="buy-tickets-button">Buy Tickets</button>
+					</div>
+				</div>
+			</div> <!-- /video-container-->
+
+			<!-- location container -->
+			<div class="location-container">
+				<h1>Two locations. Two different experiences.</h1>
+					<h2 class="subtitle">Sunday - Thursday: 6pm - 10pm</h2>
+					<h2>Fridays, Saturdays, & Holidays: 6pm - 11pm</h2>
+				<div class="location-flex-container">
+					<div class="location-flex-item">
+						<h3>North Phoenix</h3>
+						<p>27701 N Black Canyon Hwy</p>
+						<p>Phoenix, AZ 85085</p>
+						<p>Nov 14th - Jan 5th</p>
+						<button class="button-directions">Directions</button>
+					</div>
+					<div class="location-flex-item">
+						<h3>Tempe</h3>
+						<p>2200 W Alameda Dr</p>
+						<p>Phoenix, AZ 85085</p>
+						<p>Nov 16th - Dec 31st</p>
+						<button class="button-directions">Directions</button>
+					</div>
+				</div>
+			</div> <!-- /location container -->
+
+			<!-- price container -->
+			<div class="price-container">
+				<h1>Price per vehicle. Not per person.</h1>
+					<h2>Save time and money buy purchasing your tickets online.</h2>
+				<div class="price-flex-container">
+					<div class="price-flex-item">
+						<span class="online-car-text"><strong>Online</strong></span>
+						<span class="fas fa-car-side"></span>
+						<span class="online-car-price">$29</span>
+					</div>
+					<div class="price-flex-item">
+						<span class="driveup-car-text"><strong>Drive Up</strong></span>
+						<span class="fas fa-car-side car-invert"></span>
+						<span class="driveup-car-price">$35</span>
+					</div>
+				</div>
+				<div class="price-flex-container">
+					<div class="price-flex-item">
+						<span class="fas fa-shuttle-van"></span>
+						<span class="online-car-price">$59</span> <!-- $35 for drive up -->
+					</div>
+					<div class="price-flex-item">
+						<span class="fas fa-shuttle-van van-invert"></span>
+						<span class="driveup-car-price">$65</span> <!-- 65 for drive up -->
+					</div>
+				</div>
+				<div class="price-info">
+					<p>Time slots are sold in 30-minute increments. Please arrive any time within your designated time slot.</p><br>
+					<p>Party bus max-height is 13' and max-length is 28'.</p><br>
+					<p>Sales are final and non-refundable.</p><br>
+					<p>A portion of each ticket sale will be donated to:</p><br>
+					<div class="banner-children">
+					<img src="assets/banner_childrens_logo.png" alt="Banner For Children's Logo">
+					</div>
+				</div>
 				<div class="buy-button">
 					<button class="buy-tickets-button">Buy Tickets</button>
 				</div>
-			</div>
-		</div> <!-- /video-container-->
+			</div> <!-- /price Container -->
 
+			<!-- holiday blvd container -->
+			<div class="holidayblvd-container">
+				<h1>You've seen the lightshow. Now what?</h1>
+					<h2>Park your car. Hop out. Enjoy the Holiday Boulevard Marketplace (no charge for parking or entrance).</h2>
+					<h4>North Phoenix location only.</h4>
+				<div class="to-do-list">
+					<ul>
+						<li>Santa's Arctic Adventure (obstacle course)</li> 
+						<li>Pics with Santa</li>
+						<li>Food and drink</li>
+						<li>Restrooms</li>
+						<li>Arts & crafts</li>
+						<li>And much more!</li>
+					</ul>
+				</div>
+				<figure class="large-pic">
+					<img src="assets/obs_course.jpeg" alt="Obstacle Course Pic">
+					<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
+				</figure><br>
+				<figure class="large-pic">
+					<a href="holiday-blvd-map.html"><img src="assets/map.jpg" alt="Holiday Blvd Map"></a>
+					<figcaption>Holiday Boulevard Marketplace</figcaption>
+				</figure>
+				<div class="buy-button">
+					<button class="buy-tickets-button">View Large Map</button>
+				</div>
+			</div> <!-- holiday blvd container -->
+
+			<!-- reviews container -->
+				<div class="review-container">
+				<h1>Reviews</h1>
+				<h2>See what our friends are saying.</h2>
+					<div class="row">
+						<div class="review-item">
+							<p><i class="fas fa-quote-left"></i><span class="upperfont">illumination</span> gathered all the technology experts from around the country to Arizona and pushed the Christmas light technology to the next level.</p>
+							<cite><a href="https://www.bizjournals.com/phoenix/news/2017/12/22/phoenix-high-tech-illumination-holiday-light.html">- The Business Journals</a></cite>
+						</div>
+						<div class="review-item">
+							<p><i class="fas fa-quote-left"></i>All 1.7 million lights are sychronized to popular holiday songs and current hits that play through your car's radio.</p>
+							<cite><a href="https://www.abc15.com/entertainment/events/illumination-az-symphony-of-light-christmas-display-opens-in-north-phoenix">- ABC15 Arizona</a></cite>
+						</div>
+						<div class="review-item">
+							<p><i class="fas fa-quote-left"></i>The approximately 25-minute spectacular drive-through will showcase beloved holiday icons.</p>
+							<cite><a href="https://www.businesswire.com/news/home/20171004006348/en/Arizona%E2%80%99s-Largest-Holiday-Drive-Thru-Light-Spectacular-Coming">- Business Wire</a></cite>
+						</div>
+					</div> <!-- /row -->
+				</div> <!-- /review container -->
+
+			<div class="prepare-container">
+				<h1>Plan for your trip.</h1>
+					<h2>We have a few tips to make your experience as enjoyable as possible.</h2>
+				<div class="check-list">
+					<ul>
+					<li><i class="far fa-check-square"></i>Purchase online</li>
+					<p>Save time and money buy purchasing online, in advance. We've made the process super simple: Pick your time, pick your location, then load up the car and go!</p><br>
+					<li><i class="far fa-check-square"></i>Make a pit stop</li>
+					<p>Restrooms are positioned at the front gate, the entrance to the show, and at the Holiday Boulevard Marketplace. But it's a good idea to go before you <em>really</em> need to go.</p><br>
+					<li><i class="far fa-check-square"></i>Keep the kids entertained</li>
+					<p>We work very hard to keep waiting times to a minimum, but demand to see the show can spike on weekends and holidays. We recommend bringing anything to keep your kiddos entertained while you make your way in to the show.</p><br>
+					<li><i class="far fa-check-square"></i>Bring warm clothes</li>
+					<p>You can enjoy the entire lightshow from the comfort of your car, but we hope you enjoy the Holiday Boulevard Marketplace after the show (North Phoenix location only). And we don't want you to get chilly.</p>
+					</ul>
+				</div>
+			</div> <!-- prepare container -->
+
+				<!-- social container -->
+			<footer>
+				<div class="social-container">
+					<h1>Contact & Connect</h1>
+					<div class="contact-info">
+						<p><a href="tel:1-480-550-1777">480-550-1777</a></p><p> | <p>
+						<p><a href="mailto:info@worldofillumination.com">info@worldofillumination.com</a></p>
+					</div>
+					<ul class="social-icons">
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-snapchat-square"></i></a></li>
+					</ul>
+					<p class="copyright">&copy 2019 All rights reserved. Designed by Tyler Dix</p>
+				</div> <!-- /social container -->
+			</footer>
 		
-		<div class="location-container">
-			<h1>Two locations. Two different experiences.</h1>
-			<div class="showtime">
-				<h3>Sunday - Thursday: 6pm - 10pm</h3>
-				<h3>Fridays, Saturdays, & Holidays: 6pm - 11pm</h3>
-			</div>
-			<div class="location-flex-container">
-				<div class="location-flex-item">
-					<h2>North Phoenix</h2>
-					<p>27701 N Black Canyon Hwy</p>
-					<p>Phoenix, AZ 85085</p>
-					<p>Nov 14th - Jan 5th</p>
-					<button class="button-directions">Directions</button>
-				</div>
-				<div class="location-flex-item">
-					<h2>Tempe</h2>
-					<p>2200 W Alameda Dr</p>
-					<p>Phoenix, AZ 85085</p>
-					<p>Nov 16th - Dec 31st</p>
-					<button class="button-directions">Directions</button>
-				</div>
-			</div>
-		</div> <!-- /location container -->
+	<!-- jQuery from CDN -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
 
-		<!-- price container -->
-		<div class="price-container">
-			<h1>Price per vehicle. Not per person.</h1>
-			<div class="price-flex-container">
-				<div class="price-flex-item">
-					<span class="online-car-text"><strong>Online</strong></span>
-					<span class="fas fa-car-side"></span>
-					<span class="online-car-price">$29</span> <!-- $35 for drive up -->
-				</div>
-				<div class="price-flex-item">
-					<span class="driveup-car-text"><strong>Drive Up</strong></span>
-					<span class="fas fa-car-side car-invert"></span>
-					<span class="driveup-car-price">$35</span> <!-- 65 for drive up -->
-				</div>
-			</div>
-			<div class="price-flex-container">
-				<div class="price-flex-item">
-					<span class="fas fa-shuttle-van"></span>
-					<span class="online-car-price">$59</span> <!-- $35 for drive up -->
-				</div>
-				<div class="price-flex-item">
-					<span class="fas fa-shuttle-van van-invert"></span>
-					<span class="driveup-car-price">$65</span> <!-- 65 for drive up -->
-				</div>
-			</div>
-			<div class="price-info">
-				<p>Time slots are sold in 30-minute increments. Please arrive any time within your designated time slot.</p><br>
-				<p>Party bus max-height is 13' and max-length is 28'.</p><br>
-				<p>Sales are final and non-refundable.</p><br>
-				<p>A portion of each ticket sale will be donated to:</p><br>
-				<div class="banner-children">
-				<img src="assets/banner_childrens_logo.png" alt="Banner For Children's Logo">
-				</div>
-			</div>
-			<div class="buy-button">
-				<button class="buy-tickets-button">Buy Tickets</button>
-			</div>
-		</div> <!-- /Price Container -->
-
-		<!-- holiday blvd container -->
-		<div class="holidayblvd-container">
-			<h1>You've seen the lightshow. Now what?</h1>
-			<div class="showtime holiday-subtitle">
-				<h3>Park your car. Hop out. Enjoy the Holiday Boulevard Marketplace (no charge for parking or entrance).</h3>
-				<h4>North Phoenix location only.</h4>
-			</div>
-			<div class="to-do-list">
-				<ul>
-					<li>Santa's Arctic Adventure (obstacle course)</li> 
-					<li>Pics with Santa</li>
-					<li>Food and drink</li>
-					<li>Restrooms</li>
-					<li>Arts & crafts</li>
-					<li>And much more!</li>
-				</ul>
-			</div>
-			<figure class="large-pic">
-				<img src="assets/obs_course.jpeg" alt="Obstacle Course Pic">
-				<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
-			</figure><br>
-			<figure class="large-pic">
-				<a href="holiday-blvd-map.html"><img src="assets/map.jpg" alt="Holiday Blvd Map"></a>
-				<figcaption>Holiday Boulevard Marketplace</figcaption>
-			</figure>
-			<div class="buy-button">
-				<button class="buy-tickets-button">View Full Map</button>
-			</div>
-		</div> <!-- holiday blvd container -->
-	</div> <!-- /landing wrapper -->
-
-	
-<!-- jQuery from CDN -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</body>
+	</body>
+</html>
 
 <!-- URLs
 	Facebook: https://www.facebook.com/WorldofIllumination
 	YouTube: https://www.youtube.com/channel/UCqyrmCXoOVq_4vB3b0OJnNQ/videos?view_as=subscriber
 	Instagram: https://www.instagram.com/illuminationaz/
 -->
-
-</html>
