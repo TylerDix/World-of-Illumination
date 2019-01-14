@@ -13,7 +13,7 @@
 //     // Animation complete.
 //   });
 // });
-// alert("This website is for testing purposes only. You can find the original website here: https://worldofillumination.com/");
+alert("This website is for testing purposes only. You can find the original website here: https://worldofillumination.com/");
 
 $( document ).ready(function() {
 $( "#js-navbar-toggle" ).click(function() {
