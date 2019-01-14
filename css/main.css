@@ -34,12 +34,53 @@ h2 {
 	margin-bottom: 30px;
 }
 
+a {
+  background: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-out;
+}
+
+.button a {
+  font-family:'Cinzel', serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: solid 1px rgb(14, 188, 202);
+  background: black;
+  color: rgb(14, 188, 202);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.button {
+  margin-top: 30px;
+  margin-bottom:30px;
+}
+
+.button a:hover {
+  font-weight: bold;
+  color: white;
+  border: solid 1px white;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
 .subtitle {
 	margin-bottom: 0;
 }
 
 .upperfont {
 	font-family:'Cinzel', serif;
+}
+
+figcaption {
+  font-size: 0.85em;
 }
 
 /* NAV BAR                 */
@@ -124,29 +165,6 @@ h2 {
   transform: translateX(calc((100% - 100vw) / 2));
 }
 
-.buy-tickets-button {
-  width: 180px;
-  margin-top: 20px;
-  margin-bottom:20px;
-  font-size: 1em;
-  padding: 10px;
-  border: solid 1px white;
-  color: white;
-  background: rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  border-radius: 8px;
-  z-index: 1;
-}
-
-.buy-tickets-button:hover {
-  background: lightgrey;
-  color: black;
-}
-
-.buy-button {
-	text-align: center;
-}
-
 .video-overlay {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -168,8 +186,10 @@ h2 {
 	background-color: black;
 	margin-top: 100vh;
 	padding-top: 40px;
-	padding-bottom: 100px;
+	padding-bottom: 45px;
 }
+
+
 
 .subtitle h3:last-child {
 	margin-bottom: 35px;
@@ -187,18 +207,28 @@ h2 {
 	justify-content: center;
 	text-align: center;
 	padding-top: 15px;
-	padding-bottom: 15px;
 	color: lightgrey;
 	font-size: 1em;
 	line-height: 30px;
 	width: 300px;
-	height: 250px;
+	height: 100%;
 	border: 1px solid lightgrey;
 	margin: auto;
 }
 
+.location-flex-item h3 {
+  margin-bottom: 6px;
+}
+
 .location-flex-item:first-child {
 	margin-bottom: 40px;
+}
+
+.location-map-container img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
 }
 
 .button-directions {
@@ -223,20 +253,18 @@ h2 {
 .price-container,
 .review-container,
 .social-container {
-	background: #181818;
+	background: #282828;
 	position: relative;
-	margin-top: -25px;
-	padding-top: 40px;
-	padding-bottom: 65px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 }
 
 .holidayblvd-container,
 .prepare-container {
 	background: black;
 	position: relative;
-	margin-top: -25px;
-	padding-top: 40px;
-	padding-bottom: 65px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 }
 
 
@@ -335,27 +363,17 @@ h2 {
 }
 
 .large-pic img {
-	width: 100%;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 20px;
+	width: 90%;
 }
 
 figcaption {
 	color: darkgrey;
 	text-align: center;
+  margin-top: 7px;
 	margin-bottom: 20px;
-}
-
-.buy-tickets-button {
-  width: 180px;
-  margin-top: 20px;
-  margin-bottom:20px;
-  font-size: 1em;
-  padding: 10px;
-  border: solid 1px white;
-  color: white;
-  background: rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  border-radius: 8px;
-  z-index: 1;
 }
 
 .check-list {
@@ -408,40 +426,64 @@ cite a {
 	display: inline-block;
 }
 
-cite a:hover {
+cite a:hover,
+.copyright a:hover {
 	color: white;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.contact-info li {
+  list-style-type: none;
 }
 
 .contact-info a {
 	color: rgb(14, 188, 202);
-	display: inline-block;
-	text-decoration: none;
+  text-decoration: none;
 	margin: 0 8px 20px 8px;
 }
 
+.copyright a {
+  margin: 0;
+  color: rgb(14, 188, 202);
+  text-decoration: none;
+}
+
+
+
 .social-icons {
 	display: flex;
+  margin: 0 auto;
 	list-style-type: none;
 	justify-content: center;
 	font-size: 2.5em;
+}
 
+.social-icons li {
+  margin-right: 28px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
 }
 
 .social-icons a {
-	margin-right: 28px;
 	color: rgb(14, 188, 202);
 	text-decoration: none;
 }
 
-
-
 .social-icons a:hover,
 .contact-info a:hover {
 	color: white;
-	transition: all 0.3s ease-out;
 }
 
-.contact-info {
+.contact-info,
+.media {
 	display: flex;
 	justify-content: center;
 }
@@ -449,7 +491,8 @@ cite a:hover {
 .copyright {
 	text-align: center;
 	font-size: .75em;
-	margin-top: 20px;
+	padding-top: 25px;
+  margin: auto;
 	width: 95%;
 }
 
@@ -510,6 +553,10 @@ cite a:hover {
 		width: 85%;
 		}
 
+    .location-flex-item {
+      width: 300px;
+    }
+
 		.location-flex-item:first-child {
 		margin-bottom: 0px;
 		}
@@ -520,14 +567,14 @@ cite a:hover {
 		}
 
 		.check-list {
-			width: 85%;
+			width: 80%;
 		}
 
 		.row {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			width: 90%;
+			width: 80%;
 			margin: auto;
 		}
 
@@ -546,7 +593,8 @@ cite a:hover {
 		cite a {
 			margin-left: 15px;
 			margin-top: 10px;
-			display: inline-block;
+			display: flex;
+      width: 95%;
 		}
 
 } /*END MEDIUM BREAKPOINT*/
@@ -557,8 +605,17 @@ cite a:hover {
 @media screen and (min-width: 1224px) {
 
 	.location-flex-container {
-		width: 75%;
+		width: 70%;
 	}
+
+    .location-flex-item {
+    width: 400px;
+  }
+
+  .check-list,
+  .row {
+    width: 70%;
+  }
 
 } /*END LARGE BREAKPOINT*/
 

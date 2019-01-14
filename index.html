@@ -3,11 +3,13 @@
 <html lang="en">
     <head>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>World of Illumination</title>
+    	<title>Illumination, Symphony of Light</title>
+    	<link rel="icon" href="assets/logo_favicon.png">
     	<link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     	<link rel="stylesheet" type="text/css" href="css/normalize.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/cssanimation.min.css">
     </head>
 	<body>
 
@@ -16,21 +18,21 @@
 			<span class="navbar-toggle" id="js-navbar-toggle">
 				<i class="fas fa-bars"></i>
 			</span>
-			<a href="#" class="logo"><img src="assets/logo.png" alt="logo">
+			<a href="index.html" class="logo"><img src="assets/logo.png" alt="logo">
 				<!-- <img src="assets/logo.png"> -->
 			</a>
 			<ul class="main-nav" id="js-menu">
 				<li>
-					<a href="#">Locations</a>
+					<a href="#locations">locations</a>
 				</li>
 				<li>
-					<a href="#">Pricing</a>
+					<a href="#pricing">pricing</a>
 				</li>			
 				<li>
-					<a href="#">Holiday Blvd</a>
+					<a href="#holiday-blvd">holiday blvd</a>
 				</li>
 				<li>
-					<a href="#">Plan Your Trip</a>
+					<a href="#plan-your-trip">plan your trip</a>
 				</li>
 			</ul>
 		</nav> <!-- /navigation bar -->
@@ -42,57 +44,63 @@
 				</video>
 				<div class="video-overlay">
 					<p>The world's largest drive-thru holiday light spectacular.</p>
-					<div class="buy-button">
-						<button class="buy-tickets-button">Buy Tickets</button>
+					<div class="button-container">
+						<div class="button"><a href="https://www.showclix.com/events/25779?_ga=2.122117198.435421457.1543531823-802219252.1535499529">buy tickets</a></div>
 					</div>
 				</div>
 			</div> <!-- /video-container-->
 
 			<!-- location container -->
-			<div class="location-container">
-				<h1>Two locations. Two different experiences.</h1>
+			<div class="location-container" id="locations">
+				<h1 data-scrolly-down="blurIn">Two locations. Two different experiences.</h1>
 					<h2 class="subtitle">Sunday - Thursday: 6pm - 10pm</h2>
 					<h2>Fridays, Saturdays, & Holidays: 6pm - 11pm</h2>
 				<div class="location-flex-container">
-					<div class="location-flex-item">
+					<div data-scrolly-down="fadeInLeft" class="location-flex-item">
 						<h3>North Phoenix</h3>
 						<p>27701 N Black Canyon Hwy</p>
 						<p>Phoenix, AZ 85085</p>
 						<p>Nov 14th - Jan 5th</p>
-						<button class="button-directions">Directions</button>
+						<div class="location-map-container">
+							<a href="https://www.google.com/maps/place/Illumination,+Symphony+of+Light/@33.7368911,-112.1223669,15z/data=!4m12!1m6!3m5!1s0x872b0f3ef84d8e91:0xd0fbea67e9fd7840!2sTempe+Diablo+Stadium!8m2!3d33.4009387!4d-111.9704112!3m4!1s0x0:0x80799e4a23cdaca8!8m2!3d33.7358277!4d-112.1203521"><img src="assets/map_phoenix_thumb.png" alt="Tempe Map"></a>
+						</div>
+						<div class="button"><a href="#">directions</a></div>
 					</div>
-					<div class="location-flex-item">
+					<div data-scrolly-down="fadeInRight" class="location-flex-item">
 						<h3>Tempe</h3>
 						<p>2200 W Alameda Dr</p>
 						<p>Phoenix, AZ 85085</p>
 						<p>Nov 16th - Dec 31st</p>
-						<button class="button-directions">Directions</button>
+						<div class="location-map-container">
+							<a href="https://www.google.com/maps/place/Tempe+Diablo+Stadium/@33.4009432,-111.9725999,17z/data=!4m12!1m6!3m5!1s0x872b0f3ef84d8e91:0xd0fbea67e9fd7840!2sTempe+Diablo+Stadium!8m2!3d33.4009387!4d-111.9704112!3m4!1s0x872b0f3ef84d8e91:0xd0fbea67e9fd7840!8m2!3d33.4009387!4d-111.9704112"><img src="assets/map_tempe_thumb.png" alt="Tempe Map"></a>
+						</div>
+						<div class="button"><a href="#">directions</a></div>
 					</div>
 				</div>
 			</div> <!-- /location container -->
 
 			<!-- price container -->
-			<div class="price-container">
-				<h1>Price per vehicle. Not per person.</h1>
+			<div class="price-container" id="pricing">
+				<h1 data-scrolly-down="blurIn">Price per vehicle. Not per person.</h1>
 					<h2>Save time and money buy purchasing your tickets online.</h2>
 				<div class="price-flex-container">
-					<div class="price-flex-item">
+					<div data-scrolly-down="fadeInLeft" class="price-flex-item">
 						<span class="online-car-text"><strong>Online</strong></span>
 						<span class="fas fa-car-side"></span>
 						<span class="online-car-price">$29</span>
 					</div>
-					<div class="price-flex-item">
+					<div data-scrolly-down="fadeInRight" class="price-flex-item">
 						<span class="driveup-car-text"><strong>Drive Up</strong></span>
 						<span class="fas fa-car-side car-invert"></span>
 						<span class="driveup-car-price">$35</span>
 					</div>
 				</div>
 				<div class="price-flex-container">
-					<div class="price-flex-item">
+					<div data-scrolly-down="fadeInLeft" class="price-flex-item">
 						<span class="fas fa-shuttle-van"></span>
 						<span class="online-car-price">$59</span> <!-- $35 for drive up -->
 					</div>
-					<div class="price-flex-item">
+					<div data-scrolly-down="fadeInRight"class="price-flex-item">
 						<span class="fas fa-shuttle-van van-invert"></span>
 						<span class="driveup-car-price">$65</span> <!-- 65 for drive up -->
 					</div>
@@ -106,14 +114,14 @@
 					<img src="assets/banner_childrens_logo.png" alt="Banner For Children's Logo">
 					</div>
 				</div>
-				<div class="buy-button">
-					<button class="buy-tickets-button">Buy Tickets</button>
+				<div class="button-container">
+					<div class="button"><a href="https://www.showclix.com/events/25779?_ga=2.122117198.435421457.1543531823-802219252.1535499529">buy tickets</a></div>
 				</div>
 			</div> <!-- /price Container -->
 
 			<!-- holiday blvd container -->
-			<div class="holidayblvd-container">
-				<h1>You've seen the lightshow. Now what?</h1>
+			<div class="holidayblvd-container" id="holiday-blvd">
+				<h1 data-scrolly-down="blurIn">You've seen the lightshow. Now what?</h1>
 					<h2>Park your car. Hop out. Enjoy the Holiday Boulevard Marketplace (no charge for parking or entrance).</h2>
 					<h4>North Phoenix location only.</h4>
 				<div class="to-do-list">
@@ -127,21 +135,19 @@
 					</ul>
 				</div>
 				<figure class="large-pic">
-					<img src="assets/obs_course.jpeg" alt="Obstacle Course Pic">
-					<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
-				</figure><br>
-				<figure class="large-pic">
 					<a href="holiday-blvd-map.html"><img src="assets/map.jpg" alt="Holiday Blvd Map"></a>
 					<figcaption>Holiday Boulevard Marketplace</figcaption>
 				</figure>
-				<div class="buy-button">
-					<button class="buy-tickets-button">View Large Map</button>
-				</div>
+				<figure class="large-pic">
+					<a href="obstacle-course-map.html"><img src="assets/obs_course.jpeg" alt="Santa's Arctic Adventure"></a>
+					<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
+				</figure><br>
+
 			</div> <!-- holiday blvd container -->
 
 			<!-- reviews container -->
 				<div class="review-container">
-				<h1>Reviews</h1>
+				<h1 data-scrolly-down="blurIn">Reviews</h1>
 				<h2>See what our friends are saying.</h2>
 					<div class="row">
 						<div class="review-item">
@@ -159,8 +165,8 @@
 					</div> <!-- /row -->
 				</div> <!-- /review container -->
 
-			<div class="prepare-container">
-				<h1>Plan for your trip.</h1>
+			<div class="prepare-container" id="plan-your-trip">
+				<h1 data-scrolly-down="blurIn">Plan for your trip.</h1>
 					<h2>We have a few tips to make your experience as enjoyable as possible.</h2>
 				<div class="check-list">
 					<ul>
@@ -179,18 +185,19 @@
 				<!-- social container -->
 			<footer>
 				<div class="social-container">
-					<h1>Contact & Connect</h1>
-					<div class="contact-info">
-						<p><a href="tel:1-480-550-1777">480-550-1777</a></p><p> | <p>
-						<p><a href="mailto:info@worldofillumination.com">info@worldofillumination.com</a></p>
-					</div>
-					<ul class="social-icons">
-						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-snapchat-square"></i></a></li>
+					<h1 data-scrolly-down="blurIn">Contact & Connect</h1>
+					<ul class="contact-info">
+						<li><a href="tel:1-480-550-1777">480-550-1777</a></li><p> | <p>
+						<li><a href="mailto:info@worldofillumination.com">info@worldofillumination.com</a></li><p> | <p>
+						<li><a href="#">Media & Press</a></li>
 					</ul>
-					<p class="copyright">&copy 2019 All rights reserved. Designed by Tyler Dix</p>
+					<ul class="social-icons">
+						<li title="Twitter"><a href="https://twitter.com/illuminationaz?lang=en"><i class="fab fa-twitter-square"></i></a></li>
+						<li title="FaceBook"><a href="https://www.facebook.com/WorldofIllumination"><i class="fab fa-facebook-square"></i></a></li>
+						<li title="YouTube"><a href="https://www.youtube.com/channel/UCqyrmCXoOVq_4vB3b0OJnNQ/videos?view_as=subscriber"><i class="fab fa-youtube-square"></i></a></li>
+						<li title="Instagram"><a href="https://www.instagram.com/illuminationaz/"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+					<p class="copyright">&copy 2019 All rights reserved. Designed by <a href="mailto:tyler.dix@gmail.com">Tyler Dix</a></p>
 				</div> <!-- /social container -->
 			</footer>
 		
@@ -200,11 +207,18 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/scrolly.js"></script>
+    <script>
+       window.onload = function() {
+          scrolly();
+       }; 
+    </script>
 
 	</body>
 </html>
 
 <!-- URLs
+	Twitter: https://twitter.com/illuminationaz?lang=en
 	Facebook: https://www.facebook.com/WorldofIllumination
 	YouTube: https://www.youtube.com/channel/UCqyrmCXoOVq_4vB3b0OJnNQ/videos?view_as=subscriber
 	Instagram: https://www.instagram.com/illuminationaz/
