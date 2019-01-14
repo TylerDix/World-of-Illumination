@@ -6,6 +6,10 @@
 	margin: 0;
 }
 
+body, html {
+  height: 100%;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -43,6 +47,10 @@ h3 {
 
 a {
   background: none;
+}
+
+li {
+  font-size: 0.7em;
 }
 
 a:hover {
@@ -162,7 +170,7 @@ figcaption {
 /* VIDEO                   */
 /***************************/
 
-#cover-video {
+.cover-video {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -170,6 +178,16 @@ figcaption {
   min-height: 100%;
   z-index: -1;
   transform: translateX(calc((100% - 100vw) / 2));
+  overflow: hidden;
+}
+
+#fallback-img {
+  background-image: url("../assets/cover_img.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
 }
 
 .video-overlay {
