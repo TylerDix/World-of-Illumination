@@ -15,7 +15,7 @@
 
 		<!-- navigation bar -->
 		<nav class="navbar">
-			<span class="navbar-toggle" id="js-navbar-toggle">
+			<span class="navbar-toggle navbar-collapse" id="js-navbar-toggle">
 				<i class="fas fa-bars"></i>
 			</span>
 			<a href="index.html" class="logo"><img src="assets/logo.png" alt="logo">
@@ -23,23 +23,23 @@
 			</a>
 			<ul class="main-nav" id="js-menu">
 				<li>
-					<a href="#locations">locations</a>
+					<a href="#locations" class="menu-collapse">locations</a>
 				</li>
 				<li>
-					<a href="#pricing">pricing</a>
+					<a href="#holiday-blvd" class="menu-collapse">holiday blvd</a>
+				</li>
+				<li>
+					<a href="#pricing" class="menu-collapse">pricing</a>
 				</li>			
 				<li>
-					<a href="#holiday-blvd">holiday blvd</a>
-				</li>
-				<li>
-					<a href="#plan-your-trip">plan trip</a>
+					<a href="#plan-your-trip" class="menu-collapse">plan trip</a>
 				</li>
 			</ul>
 		</nav> <!-- /navigation bar -->
 
 			<!-- Video -->
 			<div class="video-container">
-				<video autoplay muted loop playsinline poster="assets/cover_img_2.jpg" class="cover-video">
+				<video autoplay muted loop playsinline poster class="cover-video">
 			  	<source src="assets/promoVid.mp4" type="video/mp4">
 			  	<source src="assets/promoVid.ogg" type="video/ogg">
 				</video>
@@ -80,6 +80,31 @@
 				</div>
 			</div> <!-- /location container -->
 
+			<!-- holiday blvd container -->
+			<div class="holidayblvd-container" id="holiday-blvd">
+				<h1 data-scrolly-down="blurIn">You've seen the lightshow. Now what?</h1>
+					<h2>Park your car. Hop out. Enjoy the Holiday Boulevard Marketplace (no charge for parking or entrance).</h2>
+					<h4>North Phoenix location only.</h4>
+				<div class="to-do-list">
+					<ul>
+						<li>Santa's Arctic Adventure (obstacle course)</li> 
+						<li>Pics with Santa</li>
+						<li>Food and drink</li>
+						<li>Restrooms</li>
+						<li>Arts & crafts</li>
+						<li>And much more!</li>
+					</ul>
+				</div>
+				<figure class="large-pic">
+					<a href="holiday-blvd-map.html"><img src="assets/map.jpg" alt="Holiday Blvd Map"></a>
+					<figcaption>Holiday Boulevard Marketplace</figcaption>
+				</figure>
+				<figure class="large-pic">
+					<a href="obstacle-course-map.html"><img src="assets/obs_course.jpeg" alt="Santa's Arctic Adventure"></a>
+					<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
+				</figure><br>
+
+			</div> <!-- holiday blvd container -->
 			<!-- price container -->
 			<div class="price-container" id="pricing">
 				<h1 data-scrolly-down="blurIn">Price per vehicle. Not per person.</h1>
@@ -119,32 +144,6 @@
 					<div class="button"><a href="https://www.showclix.com/events/25779?_ga=2.122117198.435421457.1543531823-802219252.1535499529">buy tickets</a></div>
 				</div>
 			</div> <!-- /price Container -->
-
-			<!-- holiday blvd container -->
-			<div class="holidayblvd-container" id="holiday-blvd">
-				<h1 data-scrolly-down="blurIn">You've seen the lightshow. Now what?</h1>
-					<h2>Park your car. Hop out. Enjoy the Holiday Boulevard Marketplace (no charge for parking or entrance).</h2>
-					<h4>North Phoenix location only.</h4>
-				<div class="to-do-list">
-					<ul>
-						<li>Santa's Arctic Adventure (obstacle course)</li> 
-						<li>Pics with Santa</li>
-						<li>Food and drink</li>
-						<li>Restrooms</li>
-						<li>Arts & crafts</li>
-						<li>And much more!</li>
-					</ul>
-				</div>
-				<figure class="large-pic">
-					<a href="holiday-blvd-map.html"><img src="assets/map.jpg" alt="Holiday Blvd Map"></a>
-					<figcaption>Holiday Boulevard Marketplace</figcaption>
-				</figure>
-				<figure class="large-pic">
-					<a href="obstacle-course-map.html"><img src="assets/obs_course.jpeg" alt="Santa's Arctic Adventure"></a>
-					<figcaption>Santa's Arctic Adventure (obstacle course)</figcaption>
-				</figure><br>
-
-			</div> <!-- holiday blvd container -->
 
 			<!-- reviews container -->
 				<div class="review-container">

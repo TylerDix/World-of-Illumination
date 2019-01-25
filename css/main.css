@@ -105,6 +105,16 @@ figcaption {
   font-size: 0.85em;
 }
 
+/*adds padding to clicked link*/
+h1::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -250px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 /* NAV BAR                 */
 /***************************/
 
@@ -190,7 +200,7 @@ figcaption {
   min-height: 100%;
   z-index: -1;
   transform: translateX(calc((100% - 100vw) / 2));
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /*#fallback-img {
@@ -217,6 +227,7 @@ figcaption {
 
 .video-overlay p {
 	font-family:'Cinzel', serif;
+  font-weight: bold;
   line-height: 1;
   margin-top: 20px;
 	font-size: 1em;
@@ -252,13 +263,14 @@ figcaption {
 	color: lightgrey;
 	font-size: 1em;
 	line-height: 30px;
-	width: 300px;
+	width: 250px;
 	height: 100%;
 	border: 1px solid lightgrey;
 	margin: auto;
 }
 
 .location-flex-item h3 {
+  font-size: 1em;
   margin-bottom: 6px;
 }
 
@@ -292,16 +304,17 @@ figcaption {
   color: black;
 }
 
-.price-container,
+
 .review-container,
-.social-container {
-	background: #282828;
+.social-container,
+.holidayblvd-container{
+	background: #181818;
 	position: relative;
 	padding-top: 45px;
 	padding-bottom: 45px;
 }
 
-.holidayblvd-container,
+.price-container,
 .prepare-container {
 	background: black;
 	position: relative;
@@ -548,7 +561,7 @@ cite a:hover,
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
-        height: 82px;
+        height: 73px;
         align-items: center;
     }
 
