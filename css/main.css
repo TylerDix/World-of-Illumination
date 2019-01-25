@@ -49,6 +49,7 @@ h2 {
 
 h3 {
   font-size: 0.85em;
+  color: darkgrey;
 }
 
 a {
@@ -403,6 +404,12 @@ h1::before {
 	text-align: center;
 	line-height: 1.7em;
 	width: 95%;
+}
+
+.holidayblvd-container h3 {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .holiday-subtitle h4 {
