@@ -13,7 +13,8 @@
 
 body, html {
   height: 100%;
-  color: black;
+  background-color: black;
+  z-index: 1;
 }
 
 body {
@@ -34,6 +35,7 @@ h1 {
 	margin: auto;
 	text-align: center;
 	margin-bottom: 17px;
+  margin-top: 50px;
 	width: 95%;
 }
 
@@ -62,6 +64,14 @@ li {
 
 a:hover {
   transition: all 0.3s ease-out;
+}
+
+figcaption {
+  font-size: 0.85em;
+  color: darkgrey;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
 
 .button a {
@@ -100,20 +110,6 @@ a:hover {
 
 .upperfont {
 	font-family:'Cinzel', serif;
-}
-
-figcaption {
-  font-size: 0.85em;
-}
-
-/*adds padding to clicked link*/
-h1::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -250px; 
-  height: 285px; 
-  visibility: hidden; 
-  pointer-events: none;
 }
 
 /* NAV BAR                 */
@@ -195,6 +191,7 @@ h1::before {
 
 .cover-video {
   position: fixed;
+  background: black;
   right: 0;
   bottom: 0;
   min-width: 100%; 
@@ -204,14 +201,13 @@ h1::before {
   overflow: hidden !important;
 }
 
-/*#fallback-img {
-  background-image: url("../assets/cover_img.jpg");
+.cover-video[poster] {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 3;
-}*/
+  z-index: -1;
+}
 
 .video-overlay {
 	background-color: rgba(0, 0, 0, 0.4);
@@ -312,7 +308,6 @@ h1::before {
 	background: #181818;
 	position: relative;
 	padding-top: 45px;
-	padding-bottom: 45px;
 }
 
 .price-container,
@@ -320,7 +315,7 @@ h1::before {
 	background: black;
 	position: relative;
 	padding-top: 45px;
-	padding-bottom: 45px;
+  padding-bottom: 15px;
 }
 
 
@@ -431,13 +426,6 @@ h1::before {
 	width: 90%;
 }
 
-figcaption {
-	color: darkgrey;
-	text-align: center;
-  margin-top: 7px;
-	margin-bottom: 20px;
-}
-
 .check-list {
 	display: flex;
 	margin: auto;
@@ -463,7 +451,6 @@ figcaption {
 .review-container {
 	display: flex;
 	flex-direction: column;
-	margin: auto;
 }
 
 .review-item {
@@ -568,7 +555,7 @@ cite a:hover,
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
-        height: 73px;
+        height: 80px;
         align-items: center;
     }
 
@@ -684,8 +671,8 @@ cite a:hover,
 /* CLEARFIX       */
 /***************************/
 
-/*.clearfix::after {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
-}*/
+}
