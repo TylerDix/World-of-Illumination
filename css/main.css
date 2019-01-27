@@ -539,6 +539,7 @@ cite a:hover,
 
 .copyright {
 	text-align: center;
+  line-height: 1.2em;
 	font-size: .75em;
 	padding-top: 25px;
   margin: auto;
@@ -657,7 +658,44 @@ cite a:hover,
 
 @media screen and (min-width: 1224px) {
 
-	.location-flex-container {
+	p {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  figcaption {
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  .main-nav li {
+    font-size: 1.3em;
+  }
+
+  .video-overlay p {
+    font-size: 2em;
+  }
+
+
+  .location-flex-container {
 		width: 70%;
 	}
 
