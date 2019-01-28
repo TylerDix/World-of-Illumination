@@ -1,5 +1,5 @@
 
-alert("This website is for testing purposes only. You can find the original website here: https://worldofillumination.com/");
+alert("This website is for testing purposes only. You can find the original website here: https://worldofillumination.com/ Thanks for playing!");
 
 
 $( "#js-navbar-toggle, .menu-collapse" ).click(function() {
